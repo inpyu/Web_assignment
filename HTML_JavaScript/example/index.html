@@ -1,0 +1,9 @@
+<script>
+var testWindow = window.open('test.html');
+window.addEventListener('message', function (e) {
+  if (e.origin === 'test.html') {
+    console.log(e.data); // 'bye'
+  }
+});
+testWindow.postMessage('hello', 'test.html');
+</script> 

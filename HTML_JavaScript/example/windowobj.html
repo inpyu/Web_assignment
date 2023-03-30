@@ -1,0 +1,12 @@
+<body bgcolor="pink">
+<H5 align=center> Window Objects </H5>
+
+<script>
+	for (i in window) {
+	  if(typeof(window[i]) == 'object')
+       	document.write("<B>", i ,"</B> (Object) <br>");
+  	  else  
+		document.write(window[i], "<br>");
+	}
+</script>
+</body>

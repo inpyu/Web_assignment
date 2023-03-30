@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+</head> 
+
+<body> 
+<!-- HTML --> 
+
+<canvas id="myCanvas" width="400" height="300" style="border: 1px solid black;">
+</canvas> 
+
+<!-- Javascript --> 
+<script> 
+var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "black";
+    let count = 0;
+    let xPos = 10;
+
+    function draw() {
+      if (count % 3 === 0) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // 전체 지우기
+        ctx.beginPath(); //새로 그리기~
+        ctx.arc(xPos, 150, 20, 0, Math.PI * 2);
+        ctx.fill();
+        xPos += 3;
+      }
+      count++;
+      requestAnimationFrame(draw); //루프를 통해 매번 새로그림
+    }
+    draw(); // or setInterval(draw, 10) => 최적화 및 프레임 유실 xxx
+
+</script> 
+</body> 
+</html>

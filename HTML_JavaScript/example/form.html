@@ -1,0 +1,59 @@
+<BODY>
+    <FORM  action="process.php" method="post">
+    Name: <input type="text"  name="fullname"> <BR>
+    
+    Email ID:  <input type="text"  name="email"> <BR>
+    
+    Password: <input type="PASSWORD"  name="pwd" 
+                 SIZE="30" VALUE="temporary password" MAXLENGTH="10" >
+
+   <p>Choose Pet's Accessories you are looking for:</p>
+
+<div>
+  <input type="checkbox" id="Collar" name="Collar" checked>
+  <label for="Collar">Collar</label>
+</div>
+
+<div>
+  <input type="checkbox" id="chewtoy" name="chewtoy">
+  <label for="chewtoy">Chewable Toys</label>
+</div>
+
+<div>
+  <h3>Payment Options</h3>
+  <input type="RADIO" id="payment" name="payment"  value="CC" checked>
+  <label for="payment">Credit Card</label>
+  <input type="RADIO" id="payment" name="payment" value="DC">
+  <label for="payment">Debit Card</label>
+  <input type="RADIO" id="payment" name="payment" value="BTC">
+  <label for="payment">Bitcoin</label>
+  <input type="RADIO" id="payment" name="payment" value="COD">
+  <label for="payment">Cash on Delivery</label>
+</div>
+
+<br>
+
+<H2> Type of Clothing</H2>
+  <SELECT>
+  <OPTION VALUE="TS">T Shirt</OPTION>
+  <OPTION VALUE="SH">Shirt</OPTION>
+  <OPTION VALUE="TR">Trousers</OPTION>
+  <OPTION VALUE="TP">Track Pants</OPTION>
+  <OPTION VALUE="SR">Shorts</OPTION>
+  </SELECT>
+<br><br>
+
+    Comment:  	<BR>
+	<Textarea rows="5" cols="25"></Textarea>
+
+<br><br>
+
+<H3>Upload your Picture</H3>
+  <INPUT TYPE="file" NAME="image" 
+                    ACCEPT=".jpg,.png"  >
+  <H3> Upload your Files</H3>
+  <INPUT TYPE="file" NAME="filelist" 
+    ACCEPT=".doc,.docx,.pdf" MULTIPLE >
+
+    </FORM>		
+</BODY>

@@ -1,0 +1,25 @@
+<HTML>
+   <HEAD>
+      <TITLE>
+         Roll Over Image 예제
+      </TITLE>
+      <SCRIPT LANGUAGE="JavaScript">
+         function out() {
+			        document.roll.src = "google.png";
+         }
+
+         function over() {
+        			document.roll.src = "cau.png";
+        			document.roll.width = "550";
+        			document.roll.height = "300";
+         }
+
+      </SCRIPT>
+   </HEAD>
+   <BODY>
+   <CENTER>
+      <H4>ROLL-OVER Image</H4>
+      <img name="roll" src="google.png" onMouseOut="out()" onMouseOver="over()">
+   </CENTER>
+   </BODY>
+</HTML>
